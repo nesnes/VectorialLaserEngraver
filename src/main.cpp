@@ -13,7 +13,7 @@ void printImage(LaserPrinter &printer);
 
 int main(int argc, char **argv) {
 
-    bool simulation = true; //Will print in an OpenCV windows instead of using the printer
+    bool simulation = false; //Will print in an OpenCV windows instead of using the printer
     LaserPrinter printer("COM5", simulation); //If the simulation is used, no connection will be established
     if(!printer.isConnected()) {
         std::cout << "Laser printer not found" << std::endl;
