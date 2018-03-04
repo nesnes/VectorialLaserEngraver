@@ -16,7 +16,7 @@ This program is the result of a retro enginering work to print SVG vector paths 
 
 ### Compatibility
 - Windows: Tested
-- Linux/Mac: Need serial port implementation in [SerialPort.hpp](https://github.com/nesnes/VectorialLaserEngraver/blob/master/include/SerialPort.hpp)
+- Linux/Mac: Need serial port implementation in [SerialPort.hpp](https://github.com/nesnes/VectorialLaserEngraver/blob/master/include/SerialPort.hpp). (and chase the last _Sleep()_ calls)
 
 ### Functionalities
 - Auto printer discovery and connection hover serial port
