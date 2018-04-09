@@ -45,7 +45,11 @@ int main(int argc, char **argv) {
   }
 
   int width, height;
-  std::vector<LaserPrinterSegment> svgSegments = SVGParser::getSegments(filePath, width, height);
+  std::vector<LaserPrinterSegment> svgSegments = SVGParser::getSegments("github.svg", width, height);
+  if(svgSegments.size() == 0) {
+      std::cout << "Invalid file" << std::endl;
+      exit(1);
+  }
   printer.setPrintOrigin(0, 0);
   printer.startAreaPreview(width, height);
   Sleep(5000);
